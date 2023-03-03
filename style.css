@@ -1,0 +1,93 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(50, 100, 50);
+    text-align: center; 
+}
+
+h1{
+    margin-top: 1rem;
+    font-size: 3em;
+    color: white;
+
+}
+
+h2{
+    color: white;
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 0;
+}
+
+main{
+ 
+    width:375px;
+    margin: 1rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 80vh;
+}
+
+div{
+
+    width: 90px;
+    height: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+
+.c0{
+    background-image: url(images/apple.png);
+}
+
+.c1{
+    background-image: url(images/aubergine.png);
+}
+
+.c2{
+    background-image: url(images/basket.png);
+}
+
+.c3{
+    background-image: url(images/cucumbar.png);
+}
+
+.c4{
+    background-image: url(images/lettuce.png);
+}
+
+.c5{
+    background-image: url(images/mushroom.png);
+}
+
+.c6{
+    background-image: url(images/paprika.png);
+}
+
+.c7{
+    background-image: url(images/pumpkin.png);
+}
+
+.c8{
+    background-image: url(images/star.png);
+}
+
+.c9{
+    background-image: url(images/strawberry.png);
+}
+
+
+
+.closed{
+    background-image: url(images/background.png);
+}
+/*footer{
+    background-color: black;
+    height: 10vh;
+}*/
