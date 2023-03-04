@@ -1,4 +1,6 @@
 const main = document.querySelector('main')
+const footer = document.querySelector('footer')
+const settingsContainer = document.querySelector('section')
 const pairs = document.querySelector('#pairs')
 const tries = document.querySelector('#tries')
 let pairsValue = 0
@@ -12,6 +14,7 @@ const createMemoryCards = array =>{
     for(let i = 0; i < 20; i++){
     const divElement = document.createElement('div')
     divElement.classList.add('closed')
+    divElement.classList.add('memory')
     divElement.setAttribute('id', array[i])
     const classNumber = Math.floor(array[i] / 2);
     divElement.classList.toggle(`c${classNumber}`); 
@@ -34,7 +37,7 @@ const turnCard = event =>{
     const isSame = checkCards(controllCards)//test two selected cards -> 5.
     console.log(isSame)
     countTurnCard++
-    if(countTurnCard === 1){
+    if(countTurnCard === 1){// not overwrite on the 2nd card
         previousEvent = event
         previousEvent.target.removeEventListener('click', turnCard)
     }//removing and re-adding EventListeners
@@ -69,7 +72,7 @@ const turnCard = event =>{
 //grabbing all cards
 //adding the EventListener on the cards
 const addingEventListeners = () =>{
-    const cards = document.querySelectorAll('div')
+    const cards = document.querySelectorAll('.memory')
     for(card of cards){
         card.addEventListener('click', turnCard)
     }
@@ -77,7 +80,7 @@ const addingEventListeners = () =>{
 
 //removing all EventListeners to avoid open more than 2 cards
 const removingEventListeners = () =>{
-    const cards = document.querySelectorAll('div')
+    const cards = document.querySelectorAll('.memory')
     for(card of cards){
         card.removeEventListener('click', turnCard)
     }

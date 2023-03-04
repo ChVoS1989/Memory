@@ -7,6 +7,22 @@ body{
     text-align: center; 
 }
 
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width:375px;
+    margin: auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    border: solid 1px white;
+    padding: 10px;
+}
+
 h1{
     margin-top: 1rem;
     font-size: 3em;
@@ -21,8 +37,40 @@ h2{
     margin-top: 0;
 }
 
+section{
+    display: none;
+    width: 375px;
+    height: 500px;
+    background-color: white;
+    margin: 5rem auto 0;
+}
+
+div.top{
+    display: flex;
+    width: 100%;
+    border: solid 1px black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+i.close{
+    margin-left: 25%;
+}
+
+h2.settings{
+    color: black;
+}
+
+div.style{
+    display: flex;
+    width: 100%;
+    border: solid 1px black;
+    justify-content: space-around;
+    align-items: center;
+}
+
 main{
- 
+    
     width:375px;
     margin: 1rem auto 0;
     display: grid;
@@ -32,12 +80,17 @@ main{
 }
 
 div{
-
     width: 90px;
     height: 90px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+}
+
+.gear{
     cursor: pointer;
 }
 
@@ -87,7 +140,15 @@ div{
 .closed{
     background-image: url(images/background.png);
 }
-/*footer{
-    background-color: black;
-    height: 10vh;
-}*/
+
+i.gear{
+    color: white
+}
+
+footer{
+   display: flex;
+   justify-content: space-around;
+   align-items: baseline;
+   width:375px;
+   margin: auto;
+}
