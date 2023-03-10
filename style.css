@@ -149,10 +149,13 @@ div{
     background-image: url(images/strawberry.png);
 }
 
-
+.c0, .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9{
+    transition: .5s;
+}
 
 .closed{
     background-image: url(images/background.png);
+    transition: .5s;
 }
 
 footer{
