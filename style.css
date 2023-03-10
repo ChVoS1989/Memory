@@ -103,6 +103,24 @@ div{
     justify-self: center;
 }
 
+/*desktop design*/
+@media (min-width:900px){
+    main{
+        width: 750px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 10px;
+    }
+    div{
+        width: 180px;
+        height: 180px;
+    }
+    section{  
+        height: 726px;
+    }
+}
+
 .gear{
     cursor: pointer;
     color:white;
